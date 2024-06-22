@@ -6,7 +6,7 @@ const app = express()
 
 require('dotenv').config()
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || BASE_URL
 
 //middlewares
 app.use(express.json())
